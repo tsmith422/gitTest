@@ -2,23 +2,30 @@
 <html>
     <head>
         <title>My Basic Website</title>
-        <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-    </style>
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
         <header>
             <h1>Welcome to My Basic Website</h1>
         </header>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
         <main>
             <p>This is a simple website with a black background.</p>
+            <img src="https://via.placeholder.com/150" alt="Placeholder image">
+            <form action="/submit_form" method="post">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="submit" value="Submit">
+            </form>
         </main>
         <footer>
-            <p>Website created by User</p>
+            <p>Website created by Taylor Smith</p>
         </footer>
     </body>
 </html>
